@@ -1,0 +1,18 @@
+hr {
+    page-break-before: always;
+    visibility: hidden;
+}
+
+img:hover {
+    transform: scale(1.2);
+    animation-name: zoom;
+    animation-duration: 0.5s;
+}
+
+strong, .cm-strong {
+    color: #f08705 !important;
+}
+
+em, .cm-em {
+    color: #7d69d6 !important;
+}
