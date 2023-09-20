@@ -1,6 +1,16 @@
 /* Expand table cells when clicked */
 .markdown-preview-view table {
-    position: relative;
+
+    /*
+    tables-auto-left.css snippet
+
+    Adjust tables for auto-width columns & not using full width.
+
+    2021-06-07 Matthias C. Hormann (Moonbase59)
+*/
+  table-layout: auto !important;
+  width: unset !important;
+  max-width: 100%;
   }
    
   tr {
@@ -28,26 +38,7 @@
     margin: 0;
     padding: 0;
   }
-  
-  table tr:nth-child(2n) {
-    background-color: #f8f8f8;
-  }
-  
-  table tr th {
-    font-weight: bold;
-    border: 1px solid #cccccc;
-    text-align: left;
-    margin: 0;
-    padding: 6px 13px;
-  }
-  
-  table tr td {
-    border: 1px solid #cccccc;
-    text-align: left;
-    margin: 0;
-    padding: 6px 13px;
-  }
-  
+
   table tr th:first-child,
   table tr td:first-child {
     margin-top: 0;
